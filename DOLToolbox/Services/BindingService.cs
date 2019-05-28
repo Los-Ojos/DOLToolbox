@@ -48,6 +48,12 @@ namespace DOLToolbox.Services
                             input.SelectedIndex = 0;
                         }
                         break;
+                    case RichTextBox input:
+                        input.Text = null;
+                        break;
+                    case ListBox input:
+                        input.SelectedItems.Clear();
+                        break;
                 }
             }
         }
@@ -68,6 +74,9 @@ namespace DOLToolbox.Services
                 switch (formProperty.GetValue(form))
                 {
                     case TextBox input:
+                        input.Text = mobProperty.GetValue(source)?.ToString();
+                        break;
+                    case RichTextBox input:
                         input.Text = mobProperty.GetValue(source)?.ToString();
                         break;
                     case CheckBox input:

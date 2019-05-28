@@ -87,11 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Content\DatabaseManager.cs" />
-    <Compile Include="Controls\DataQuestControl.cs">
+    <Compile Include="Controls\RewardQuestControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\DataQuestControl.Designer.cs">
-      <DependentUpon>DataQuestControl.cs</DependentUpon>
+    <Compile Include="Controls\RewardQuestControl.Designer.cs">
+      <DependentUpon>RewardQuestControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\LootTemplateControl.cs">
       <SubType>UserControl</SubType>
@@ -123,6 +123,12 @@
     </Compile>
     <Compile Include="Forms\NpcTemplateSearchForm.Designer.cs">
       <DependentUpon>NpcTemplateSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RewardQuestSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RewardQuestSearchForm.Designer.cs">
+      <DependentUpon>RewardQuestSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SpellSearchForm.cs">
       <SubType>Form</SubType>
@@ -222,9 +228,10 @@
     <Compile Include="Services\NpcTemplateService.cs" />
     <Compile Include="Services\MobService.cs" />
     <Compile Include="Services\ImageService.cs" />
+    <Compile Include="Services\RewardQuestService.cs" />
     <Compile Include="Services\SpellService.cs" />
-    <EmbeddedResource Include="Controls\DataQuestControl.resx">
-      <DependentUpon>DataQuestControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\RewardQuestControl.resx">
+      <DependentUpon>RewardQuestControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LootTemplateControl.resx">
       <DependentUpon>LootTemplateControl.cs</DependentUpon>
@@ -281,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NpcTemplateSearchForm.resx">
       <DependentUpon>NpcTemplateSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RewardQuestSearchForm.resx">
+      <DependentUpon>RewardQuestSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SpellSearchForm.resx">
       <DependentUpon>SpellSearchForm.cs</DependentUpon>
