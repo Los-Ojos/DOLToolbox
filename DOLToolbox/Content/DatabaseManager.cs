@@ -15,6 +15,7 @@ namespace DOLToolbox
             typeof(DBAppeal),
             typeof(DOLCharacters),
             typeof(DBDataQuest),
+            typeof(DBDQRewardQ),
             typeof(CharacterXDataQuest),
             typeof(Mob),
             typeof(DBNpcTemplate),
